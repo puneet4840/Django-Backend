@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+<body>
+    <h1>WELCOME {{name}}</h1>
+    <h1>This is Home Page</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home_page' %}">Home</a></li>
+            <li><a href="{% url 'course_page' %}">Course</a></li>
+            <li><a href="{% url 'fees_page' %}">Fees</a></li>
+            <li><a href="{% url 'about_page' %}">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
